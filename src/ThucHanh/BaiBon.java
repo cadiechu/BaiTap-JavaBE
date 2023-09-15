@@ -1,5 +1,7 @@
 package ThucHanh;
 
+import java.util.Scanner;
+
 public class BaiBon {
     public static void main(String[] args) {
         String[] studentList = {"Tí", "Tèo", "Tủn", "Tủm", "Tỉm", "John", "Son", "baby"};
