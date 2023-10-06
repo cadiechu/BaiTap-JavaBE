@@ -1,17 +1,28 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-public class Main {
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Objects;
+import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import static java.lang.Math.E;
+
+public class Main { 
+    //Xây dựng giải thuật tìm kiếm tuyến tính và nhị phân trên 1 Array kiểu dữ liệu Generic
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+//        List<Integer> list = Arrays.asList(1,5,3,97,5,5,7,5,88,5,5,5,6,877,874,646,46,4,787);
     }
+    public static <T, E> int linearSearch(E value, T[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].equals(value)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+
 }
+
